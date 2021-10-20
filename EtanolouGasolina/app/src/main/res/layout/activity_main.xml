@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#FFF"
+        android:orientation="vertical"
+        android:paddingHorizontal="100px">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Qual o combustível mais vantajoso?"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="80dp"
+            android:textColor="#F8B195"
+            android:textSize="30sp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preço da gasolina"
+            android:textColor="#808080"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/inputGasolina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="2"
+            android:hint="Insira o preço da gasolina"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preço do etanol"
+            android:layout_marginTop="30dp"
+            android:textSize="22dp"
+            android:textColor="#808080"/>
+
+        <EditText
+            android:id="@+id/inputEtanol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="4"
+            android:inputType="numberDecimal"
+            android:hint="Insira o preço do etanol" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="enviar"
+            android:layout_marginTop="60dp"
+            android:paddingVertical="10dp"
+            android:backgroundTint="#F8B195"
+            android:textSize="22dp"
+            android:textColor="#FFF"
+            android:onClick="mostraTela2"/>
+    </LinearLayout>
+
+</FrameLayout>

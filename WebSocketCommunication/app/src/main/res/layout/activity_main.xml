@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#FFF"
+        android:orientation="vertical"
+        android:paddingHorizontal="100px">
+
+        <TextView
+            android:id="@+id/textChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chat here:"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/pink_200" />
+
+        <EditText
+            android:id="@+id/inputChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Comunicação com o WebSocket"
+            android:inputType="textMultiLine"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Text here:"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/pink_200" />
+
+        <EditText
+            android:id="@+id/inputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Insira o texto"
+            android:inputType="text"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginVertical="60dp">
+            <Button
+                android:id="@+id/buttonStart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:layout_marginRight="30dp"
+                android:paddingVertical="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/pink_200"
+                android:textSize="18dp"
+                android:textColor="#FFF"
+                android:onClick="start" />
+
+            <Button
+                android:id="@+id/buttonSendMessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Send"
+                android:paddingVertical="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/pink_200"
+                android:textSize="18dp"
+                android:textColor="#FFF"
+                android:onClick="sendMessage" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

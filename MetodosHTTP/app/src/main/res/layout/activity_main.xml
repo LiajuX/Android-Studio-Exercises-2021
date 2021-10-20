@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFF"
+    android:orientation="vertical"
+    android:paddingHorizontal="100px"
+    tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textLabelID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFBA01" />
+
+        <EditText
+            android:id="@+id/inputID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="2"
+            android:hint="Insira o ID do usuário"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pesquisar"
+            android:layout_marginTop="20dp"
+            android:paddingVertical="10dp"
+            android:backgroundTint="#FFBA01"
+            android:textSize="18dp"
+            android:textColor="#FFF"
+            android:onClick="executaConsulta" />
+
+        <TextView
+            android:id="@+id/textLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="#FFBA01" />
+
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do usuário"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textLabel2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sobrenome"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="#FFBA01" />
+
+        <EditText
+            android:id="@+id/inputSurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sobrenome do usuário"
+            android:inputType="text" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="30dp">
+                <Button
+                    android:id="@+id/buttonPOST"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="POSt"
+                    android:layout_marginRight="20dp"
+                    android:paddingVertical="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFBA01"
+                    android:textSize="18dp"
+                    android:textColor="#FFF"
+                    android:onClick="executaPost" />
+
+                <Button
+                    android:id="@+id/buttonPUT"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="PUT"
+                    android:paddingVertical="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFBA01"
+                    android:textSize="18dp"
+                    android:textColor="#FFF"
+                    android:onClick="executaPut" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonDELETE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DELETE"
+            android:layout_marginTop="10dp"
+            android:paddingVertical="10dp"
+            android:backgroundTint="#FFBA01"
+            android:textSize="18dp"
+            android:textColor="#FFF"
+            android:onClick="executaDelete" />
+
+        <TextView
+            android:id="@+id/textMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#FFBA01"
+            android:textSize="24dp" />
+</LinearLayout>

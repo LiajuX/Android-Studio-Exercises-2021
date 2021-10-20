@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CalculadoraDeIdade" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#F67280</item>
+        <item name="colorPrimaryVariant">#F67280</item>
+        <item name="colorOnPrimary">#F67280</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#F67280</item>
+        <item name="colorSecondaryVariant">#F67280</item>
+        <item name="colorOnSecondary">#F67280</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#FFF"
+        android:orientation="vertical"
+        android:paddingHorizontal="90px">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculadora de Idade"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="60dp"
+            android:textColor="#F67280"
+            android:textSize="30sp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mês do nascimento"
+            android:textSize="22dp"
+            android:textColor="#808080"/>
+
+        <EditText
+            android:id="@+id/inputBirthMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="2"
+            android:hint="Insira o mês do seu nascimento"
+            android:inputType="number"
+            android:maxLength="2"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ano do nascimento"
+            android:layout_marginTop="30dp"
+            android:textSize="22dp"
+            android:textColor="#808080"/>
+
+        <EditText
+        android:id="@+id/inputBirthYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:inputType="number"
+        android:hint="Insira o mês do seu nascimento"
+        android:maxLength="4" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="enviar"
+            android:layout_marginTop="60dp"
+            android:paddingVertical="10dp"
+            android:backgroundTint="#F67280"
+            android:textSize="22dp"
+            android:textColor="#FFF"
+            android:onClick="calculaIdade"/>
+
+        <TextView
+            android:id="@+id/idadeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="60dp"
+            android:textColor="#F67280"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+
+</FrameLayout>
